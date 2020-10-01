@@ -1,21 +1,15 @@
 .App {
   text-align: center;
-  background: #616161;
+  background: #eeeeee; /* #616161; */
   /* min-height: 100vh; */
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  /* height: 100%; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 100px auto;
+  border-radius: 65px 0px 80px 0px;
+  /*_________ x y   blur-radius spread-radius | color */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
