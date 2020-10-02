@@ -140,7 +140,7 @@ input[type="number"] {
   /* background-color: #9c88ff; */
 }
 input:focus {
-  transform: scale(1.2);
+  transform: scale(1.05);
   transition: transform 600ms ease-out;
 }
 .btn {
