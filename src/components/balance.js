@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import userBalanceContext from '../statehandlers/Context';
+import userBalanceContext from '../statehandlers/globalstate';
 
 export const Balance = () =>
 {

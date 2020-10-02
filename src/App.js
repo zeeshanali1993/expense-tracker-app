@@ -4,7 +4,7 @@ import { Balance } from './components/balance';
 import { Incomeexpense } from './components/incomeexpense';
 import { Transactionlist } from './components/transactionlist';
 import { Newtransaction } from './components/newtransaction';
-import Context from './statehandlers/Context';
+import Context from './statehandlers/globalstate';
 
 import './App.css';
 
