@@ -1,13 +1,22 @@
 import React, { useContext, useReducer } from 'react';
 // // import reducer from '../statehandlers/reducer';
-// import { GlobalContext } from '../statehandlers/globalstate';
+import { GlobalContext } from '../statehandlers/globalstate';
 
 export const Balance = () =>
 {
+    const { transactions } = useContext(GlobalContext);
+    // console.log(transactions);
+    // let amounts = transactions['amount'].reduce((sum, value) =>
+    //     (sum += value), 0);
+    // console.log('amounts: ' + amounts);
+    let amount = transactions.map(transactionAmount => transactionAmount.amount);
+    let totalBalance = amount.reduce((sum, value) => (sum += value), 0).toFixed(2);
+    // console.log(totalBalance)
+    let sign = totalBalance < 0 ? '-' : '+';
     return (
         <div className='container'>
             <h4>Your balance</h4>
-            <h1 id='balance'>$0.00</h1>
+            <h1 id='balance'>{sign}${Math.abs(totalBalance)}</h1>
         </div>
     )
 }
