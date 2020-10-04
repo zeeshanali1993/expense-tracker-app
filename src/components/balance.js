@@ -5,13 +5,8 @@ import { GlobalContext } from '../statehandlers/globalstate';
 export const Balance = () =>
 {
     const { transactions } = useContext(GlobalContext);
-    // console.log(transactions);
-    // let amounts = transactions['amount'].reduce((sum, value) =>
-    //     (sum += value), 0);
-    // console.log('amounts: ' + amounts);
     let amount = transactions.map(transactionAmount => transactionAmount.amount);
     let totalBalance = amount.reduce((sum, value) => (sum += value), 0).toFixed(2);
-    // console.log(totalBalance)
     let sign = totalBalance < 0 ? '-' : '+';
     return (
         <div className='container'>
