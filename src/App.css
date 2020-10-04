@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  margin: 30px auto;
+  margin: 20px auto;
   width: 350px;
 }
 
@@ -46,7 +46,7 @@ h2 {
 h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
-  margin: 40px 0 10px;
+  margin: 35px 0 10px;
   text-transform: uppercase;
 }
 
@@ -58,10 +58,10 @@ h3 {
 .inc-exp-container {
   background-color: #fff;
   box-shadow: var(--box-shadow-black);
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .inc-exp-container > div {
@@ -81,7 +81,9 @@ h3 {
 }
 /* =============================================== */
 .list {
+  /* height: 300px; */
   margin-bottom: 40px;
+  width: 91%;
   list-style-type: none;
   padding: 0%;
 }
@@ -95,14 +97,11 @@ h3 {
   padding: 10px;
   margin: 10px 0;
 }
-.list li:hover .delete-btn {
-  opacity: 1;
-}
 .list li.minus {
-  border-right: 2px solid red;
+  border-left: 4px solid red;
 }
 .list li.plus {
-  border-right: 2px solid green;
+  border-left: 4px solid green;
 }
 .delete-btn {
   cursor: pointer;
@@ -114,14 +113,17 @@ h3 {
   padding: 9.5px 10px;
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  /* right: 0;
-  transform: translate(100%, -50%); */
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  /* left: 0;
+  transform: translate(-100%, -50%); */
+  right: 0;
+  transform: translate(100%, -50%);
+  /* opacity: 0; */
+  box-shadow: var(--box-shadow-black);
+  /* transition: opacity 0.4s ease-in-out; */
 }
-
+/* .list li:hover .delete-btn {
+  opacity: 1;
+} */
 label {
   display: inline-block;
   margin: 10px 0;

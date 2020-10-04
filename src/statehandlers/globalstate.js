@@ -1,5 +1,32 @@
-import React, { createContext } from 'react';
+import React, { createContext, useReducer } from 'react';
+import reducer from './reducer';
 
-const userBalanceContext = createContext(0);
+//Initial State
+const initialState = {
+    transactions: [
+        {
+            id: 1, text: 'Flower', amount: -20
+        },
+        {
+            id: 2, text: 'Book', amount: 30
+        },
+        {
+            id: 3, text: 'Mobile', amount: -300
+        }
+    ]
+};
 
-export default userBalanceContext;
+// Create Context
+export const GlobalContext = createContext(initialState);
+
+//Provider Component
+export const GlobalProvider = ({ children }) =>
+{
+    const [state, dispatcher] = useReducer(reducer, initialState);
+    return (
+        <GlobalContext.Provider value={initialState}>
+            {/* //extract transaction array from state and store on transactions object */}
+            {children}
+        </GlobalContext.Provider>
+    );
+}
