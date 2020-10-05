@@ -106,6 +106,7 @@ h3 {
 .delete-btn {
   cursor: pointer;
   background-color: yellowgreen;
+  transition: background 500ms ease;
   border: 0;
   color: #fff;
   font-size: 20px;
@@ -121,9 +122,10 @@ h3 {
   box-shadow: var(--box-shadow-black);
   /* transition: opacity 0.4s ease-in-out; */
 }
-/* .list li:hover .delete-btn {
-  opacity: 1;
-} */
+.delete-btn:hover {
+  background: #c0392b;
+  transition: background 400ms ease;
+}
 label {
   display: inline-block;
   margin: 10px 0;
