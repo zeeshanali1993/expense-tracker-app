@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { Transactionlist } from './transactionlist';
 import { GlobalContext } from '../statehandlers/globalstate';
 
 export const Printtransactions = ({ x }) =>

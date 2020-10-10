@@ -1,5 +1,4 @@
-import React, { useContext, useReducer } from 'react';
-// // import reducer from '../statehandlers/reducer';
+import React, { useContext } from 'react';
 import { GlobalContext } from '../statehandlers/globalstate';
 
 export const Balance = () =>
