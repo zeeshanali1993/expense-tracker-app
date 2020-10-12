@@ -4,18 +4,7 @@ import reducer from './reducer';
 //Initial State
 const initialState = {
     transactions: [
-        {
-            id: 1, text: 'Flower', amount: -20
-        },
-        {
-            id: 2, text: 'Book', amount: 300
-        },
-        {
-            id: 3, text: 'Mobile', amount: -10
-        },
-        {
-            id: 4, text: 'Lottery', amount: 150
-        }
+
     ]
 };
 
@@ -33,8 +22,15 @@ export const GlobalProvider = ({ children }) =>
             payload: id
         });
     }
+    function addTransaction(transaction)
+    {
+        dispatcher({
+            type: 'ADD_TRANSACTION',
+            payload: transaction
+        });
+    }
     return (
-        <GlobalContext.Provider value={{ transactions: state.transactions, deleteTransaction }}>
+        <GlobalContext.Provider value={{ transactions: state.transactions, deleteTransaction, addTransaction }}>
             {/* //extract transaction array from state and store on transactions object */}
             {children}
         </GlobalContext.Provider>
