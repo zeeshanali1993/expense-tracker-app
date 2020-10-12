@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone this repo or type ###`git clone https://github.com/zeeshanali1993/expense-tracker-app.git` in terminal.
 
 ## Available Scripts
 
