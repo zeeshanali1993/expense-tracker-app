@@ -1,9 +1,12 @@
-Clone this repo or type 
-###`git clone https://github.com/zeeshanali1993/expense-tracker-app.git` in terminal.
+Clone this repo or type `git clone https://github.com/zeeshanali1993/expense-tracker-app.git` in terminal.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Will install all the required libraries and dependencies.
 
 ### `yarn start`
 
