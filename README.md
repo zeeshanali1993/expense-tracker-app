@@ -1,4 +1,5 @@
-Clone this repo or type ###`git clone https://github.com/zeeshanali1993/expense-tracker-app.git` in terminal.
+Clone this repo or type 
+###`git clone https://github.com/zeeshanali1993/expense-tracker-app.git` in terminal.
 
 ## Available Scripts
 
