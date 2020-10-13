@@ -18,6 +18,9 @@ jobs:
       - name: Installing surge
         run: npm install surge -g
       
+      - name: Installing depenencies and libraries
+        run: npm install
+      
       - name: Building react
         run: npm run-script build
       
