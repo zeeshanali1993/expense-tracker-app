@@ -1,0 +1,25 @@
+name: Expense Tracker
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Installing Nodejs
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: 14.x
+      
+      - name: Installing surge
+        run: npm install surge -g
+      
+      - name: Building react
+        run: npm build
+      
+      - name: Publishing on Surge
+        run: surge ./build bootcamp_eta.surge.sh --token ${{secrets.surge_token}}
