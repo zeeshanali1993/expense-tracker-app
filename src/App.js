@@ -10,6 +10,7 @@ import './App.css';
 
 function App()
 {
+  alert('Published through Github actions');
   return (
     <GlobalProvider>
       <Header />
