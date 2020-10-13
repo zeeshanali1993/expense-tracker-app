@@ -19,7 +19,7 @@ jobs:
         run: npm install surge -g
       
       - name: Building react
-        run: npm build
+        run: npm run-script build
       
       - name: Publishing on Surge
         run: surge ./build bootcamp_eta.surge.sh --token ${{secrets.surge_token}}
